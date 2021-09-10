@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Go & Grow</title>
+  <link rel="shortcut icon" href="./assets/img/arvore.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <input type="checkbox" role="button" aria-label="Close menu" id="close-menu" class="close-menu">
+  <label class="close-menu-label" for="close-menu" title="close menu"></label>
+  <header class="menu">
+    <div class="navbar menu-content">
+      <a href="#home" onclick="getElementById('close-menu').checked = false;">
+        <img src="./assets/img/arvore.png" alt="logo de uma árvore">
+      </a>
+      <nav>
+        <ul onclick="getElementById('close-menu').checked = false;">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#metodos">Métodos</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="home">
+    <div class="home-content">
+      <div class="home-text-content">
+        <h1>Go & Grow</h1>
+        <p>A Go & Grow é um centro de vivência bilíngue para crianças diferente das escolas e cursos tradicionais.
+          Nosso método de imersão total no inglês permite que os alunos aprendam diferentes tipos de conteúdo em inglês
+          ao invés de terem aulas de inglês convencionais.
+        </p>
+      </div>
+      <div class="home-img">
+        <img src="assets/img/menu-bg.svg" alt="Imagem de um menino segurando a alça da mochila,
+         de frente para uma menina segurando uma fruta">
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="sobre-content">
+      <h2>Sobre nós</h2>
+      <p>Por meio de um método próprio e exclusivo de ensino, com atividades focadas no desenvolvimento integral dos
+        alunos,
+        a Go & Grow possui estrutura completa para que a imersão se dê de forma natural.
+      </p>
+      <p>Para que os alunos possam vivenciar uma experiência completa, foi criada uma rotina de estudos que visa
+        facilitar e naturalizar a assimilação do idioma.
+        Enquanto estiver na Go & Grow, o aluno não terá nenhum contato com outra língua que não seja o inglês.
+      </p>
+      <p>Nossa missão é fornecer uma imersão no aprendizado da língua inglesa através de atividades lúdicas,
+        das artes, de músicas e interação sócio-educacional.
+      </p>
+    </div>
+  </section>
+
+  <section id="metodos" class="metodos">
+    <div class="metodos-content">
+      <h2>Métodos</h2>
+      <p>A Go & Grow tem um método original e exclusivo com material didático próprio
+        para ensinar crianças de maneira efetiva e é dividido em 3 pilares.</p>
+
+      <div class="grid">
+        <article>
+          <h3>Imersão total</h3>
+          <p>A Go & Grow ensina inglês do mesmo jeito que aprendemos a língua materna: antes de ler ou escrever, você
+            fala.
+            Em todo o ambiente e nas atividades propostas, o aluno é incentivado a se comunicar somente em inglês desde
+            o primeiro dia de aula.</p>
+        </article>
+        <article>
+          <h3>Interatividade</h3>
+          <p>Na Go & Grow acreditamos que as aulas para as crianças devem ser comunicativas e lúdicas.
+             Por isso, as crianças aprendem por meio de atividades práticas, chamadas de “hands on activities”, onde eles podem de fato “botar a mão na massa”.</p>
+        </article>
+        <article>
+          <h3>Interdisciplinaridade</h3>
+          <p>Nossa escola tem como objetivo ensinar o inglês através de projetos interdisciplinares para que os alunos possam cada vez mais, experimentar o idioma aprendido.
+            Acreditamos que todas as áreas do conhecimento estão interligada de alguma forma e por isso devem ser aprendidas em conjunto.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="metodos">
+    <div class="metodos-content">
+      <h2>Galeria</h2>
+      <p>Fotos</p>
+
+      <div class="grid">
+        <div class="gallery-img">
+          <img src="./assets/img/foto1.jpg" alt="Random image from unsplash">
+        </div>
+        <div class="gallery-img">
+          <img src="./assets/img/foto2.jpg" alt="Random image from unsplash">
+        </div>
+        <div class="gallery-img">
+          <img src="./assets/img/foto3.jpg" alt="Random image from unsplash">
+        </div>
+        <div class="gallery-img">
+          <img src="./assets/img/foto4.jpg" alt="Random image from unsplash">
+        </div>
+        <div class="gallery-img">
+          <img src="./assets/img/foto5.jpg" alt="Random image from unsplash">
+        </div>
+        <div class="gallery-img">
+          <img src="./assets/img/foto6.jpg" alt="Random image from unsplash">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="home contato">
+    <div class="contato-content">
+      <div class="contato">
+        <h2>Contato</h2>
+        <p>Para mais informações preencha o formulário. </p>
+
+        <form netlify class="formulario">
+          <label>Nome</label>
+          <input type="text" class="nome validar">
+          <label>Sobrenome</label>
+          <input type="text" class="sobrenome validar">
+          <label>Email</label>
+          <input type="text" class="email validar">
+          <label for="email">Mensagem</label>
+          <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+
+      </div>
+      <div class="contato-img">
+        <img src="./assets/img/contact-bg.svg" alt="imagem com 2 mulheres, 1 sentada e a outra em pé,
+       ambas mexendo no celular. com um fundo com uma seta, uma img de mensagem e de um telefone" srcset="">
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer">
+    <p>Copyrigth ©2021 Felipe Maia</p>
+  </footer>
+  <a class="back-to-top" href="#">➤</a>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

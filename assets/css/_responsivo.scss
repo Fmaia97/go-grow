@@ -1,0 +1,105 @@
+@media (max-width: 999px) {
+  .contato-content {
+    display: block;
+    max-width: 60rem;
+
+    .contato-img {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  body {
+    h1,
+    h2 {
+      font-size: 5rem;
+    }
+  }
+
+  .close-menu {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    &:checked ~ .menu {
+      display: block;
+    }
+
+    &:checked ~ .close-menu-label::after {
+      content: "×";
+    }
+  }
+
+  .close-menu-label {
+    &::after {
+      content: "≡";
+      position: fixed;
+      z-index: 2;
+      top: 2rem;
+      right: 2rem;
+      background: $white-color;
+      color: $primary-color;
+      font-size: 3rem;
+      line-height: 3rem;
+      width: 3rem;
+      height: 3rem;
+      text-align: center;
+      padding: 0.5rem;
+      cursor: pointer;
+      border-radius: 0.5rem;
+    }
+  }
+
+  .menu {
+    bottom: 0;
+    display: none;
+  }
+
+  .menu-content {
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+
+    ul {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .home-content {
+    gap: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .metodos {
+    h2,
+    p {
+      text-align: center;
+    }
+    .metodos-content {
+      display: block;
+    }
+
+    .grid {
+      grid-template-columns: 1fr;
+    }
+
+    .gallery-img {
+      width: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .contato {
+    .contato-content {
+      display: block;
+    }
+  }
+}

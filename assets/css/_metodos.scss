@@ -1,0 +1,47 @@
+.metodos {
+  @include fundo(primary);
+  @extend .section;
+
+  .metodos-content {
+    @extend .main-content;
+    @extend .section;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    counter-reset: grid-counter;
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      padding-bottom: 5rem;
+      max-width: 80rem;
+    }
+
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:30px ;
+
+    h3 {
+      font-size: 3rem;
+      position: relative;
+      padding-left: 5rem;
+      padding-bottom: 2rem;
+
+      &::before {
+        counter-increment: grid-counter;
+        content: counter(grid-counter);
+        position: absolute;
+        font-size: 8rem;
+        font-style: italic;
+        top: -4rem;
+        left: -2rem;
+        transform: rotate(5deg);
+      }
+    }
+  }
+}

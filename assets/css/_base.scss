@@ -1,0 +1,95 @@
+$primary-color: #719471;
+$white-color: #fff;
+$light-gray-color: #eee;
+$gap: 30px;
+
+@mixin fundo($val) {
+  @if $val == primary {
+    background-color: $primary-color;
+    color: $white-color;
+  } @else if $val == secundary {
+    background-color: $white-color;
+    color: $primary-color;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: $primary-color;
+
+  h1, h2, h3, h4{
+    //font-family: 'Montserrat', sans-serif;
+    font-family: 'Fredoka One', cursive;
+  }
+
+  h1, h2 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 5rem;
+  }
+
+  h4 {
+    font-size: 4.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    font-family: 'Fredoka One', cursive;
+  }
+}
+
+.main-content {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 10rem $gap;
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.close-menu {
+  display: none;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: $white-color;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 50%;
+  color: $primary-color;
+  transform: rotate(-90deg);
+  border: 0.1rem solid $primary-color;
+}
+

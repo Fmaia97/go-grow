@@ -1,0 +1,51 @@
+.menu {
+  @include fundo(secundary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-bottom: 0.1rem solid $light-gray-color;
+  z-index: 1;
+
+  a {
+    color: $primary-color;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+  }
+
+  li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      width: 0;
+      height: 0.2rem;
+      background: $primary-color;
+      transition: all 300ms ease-in-out;
+    }
+
+    &:hover::after {
+      width: 50%;
+      left: 25%;
+    }
+    
+  }
+}
+
+.menu-content {
+  @extend .main-content;
+  @extend .flex;
+  justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 0;
+}
